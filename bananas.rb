@@ -1,6 +1,10 @@
 
 
-fruits = [ "apples", "oranges", "bananas"]
+
+fruits = %w(apples oranges grapes bananas)
 
 
 puts fruits.index("bananas")
+
+
+

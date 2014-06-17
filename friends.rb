@@ -1,24 +1,23 @@
-# ask the user for the name of a friend
 
-# keep going until user inputs an empty line.... ""
+array_of_friends = []
 
-# then print back name of all your friends
+name = "name"
 
-friends = []
-
-puts "Input a name of a friend"
-name = gets.chomp()
-friends << name
 
 while name != ""
+  puts "Gimme a friend's name:"
   name = gets.chomp()
-  if name != ""
-    friends << name
-  end
+  array_of_friends << name if name != ""
 end
 
-puts "Here are your friends"
 
-friends.each do |friend|
-  puts friend
+puts "These are your friends:"
+
+if array_of_friends.length == 0
+
+  puts "You are a loser... you have no friends!"
+else
+  array_of_friends.each do |friend|
+    puts friend
+  end
 end

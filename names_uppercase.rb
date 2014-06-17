@@ -1,14 +1,14 @@
-fruits = [ "apples", "oranges", "bananas"]
 
-fruits_upcase = []
+
+
+fruits = %w(apples oranges grapes bananas)
+
+fruits_uppercase = []
 
 
 fruits.each do |fruit|
-  fruits_upcase << fruit.upcase
-
-
-
-
+  fruits_uppercase << fruit.upcase
 end
 
-print fruits_upcase
+print fruits_uppercase
+puts

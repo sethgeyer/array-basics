@@ -1,19 +1,6 @@
-fruits = [ "apples", "oranges", "bananas", "grapes"]
-
-
-
+fruits = %w(apples oranges grapes bananas)
 
 fruits.each do |fruit|
-  if fruit.include?("g")
-
-  puts fruit
-
-  end
-
-
-
-
+  puts fruit if fruit.include?("g")
 end
-
-
 
